@@ -35,3 +35,19 @@ console.log(productos[0])
 console.log(productos[0].price)
 
 
+const ahora = new Date()
+const anno = ahora.getFullYear()
+const mes = ahora.getMonth()
+const dia = ahora.getDate()
+const horas = ahora.getHours()
+const minutos = ahora.getMinutes()
+const segundos = ahora.getSeconds()
+
+console.log(ahora)
+
+console.log(segundos)
+
+console.log(anno)
+
+console.log(`hoy es ${dia}-${mes+1}-${anno}`)
+console.log(new Date(1990,5,20))
