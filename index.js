@@ -51,3 +51,34 @@ console.log(anno)
 
 console.log(`hoy es ${dia}-${mes+1}-${anno}`)
 console.log(new Date(1990,5,20))
+
+const hora = 15;
+if (hora < 12) {
+    console.log ("buenos dias");
+} else if (hora < 18) {
+    console.log("buenas tardes");
+} else if (hora > 18) {
+    console.log("buenas noches");
+} else if (hora >= 0){
+    console.log("hora invalida");
+} else{
+    console.log("hora invalida")
+}
+
+const saludo = hora < 12 ? "buenos dias" : "buenas tardes";
+
+function saludar(x) {
+    return `hola, ${x}`
+}
+
+console.log(saludar("diego"))
+
+function sumar(x,b){
+    return x+b
+}
+
+const resultadoSuma = sumar(5, 7)
+console.log("resultado de la suma:", resultadoSuma)
+
+const sumarArrow = (x, b)=> x+b
+console.log("resultado de la suma con arrow function",sumarArrow(4, 2))
