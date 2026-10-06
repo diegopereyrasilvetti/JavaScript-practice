@@ -82,3 +82,28 @@ console.log("resultado de la suma:", resultadoSuma)
 
 const sumarArrow = (x, b)=> x+b
 console.log("resultado de la suma con arrow function",sumarArrow(4, 2))
+
+function restar(a, b){
+    return a-b
+
+} 
+const resultadoResta = restar(8, 5)
+console.log("resultado de la resta", resultadoResta)
+
+function multiplicar (y, z){
+    return y*z
+}
+const resultadoMultiplicar = multiplicar(2, 5)
+console.log ("resultado de la multiplicacion",resultadoMultiplicar)
+
+function dividir (h, i){
+    if (h===0 || i===0){
+        return "la division no es posible"
+    }
+    return h/i
+    
+}
+const resultadoDividir = dividir(250, 5)
+console.log ("resultado de la division",resultadoDividir)
+
+
